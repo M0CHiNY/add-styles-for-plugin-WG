@@ -58,6 +58,16 @@
 .settings__label {
   display: block;
   margin-bottom: 20px;
+  .settings__label_wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+  .setting__label-span {
+    display: block;
+  }
 }
 
 .settings__input {
