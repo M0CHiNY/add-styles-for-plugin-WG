@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
+    "nouislider": "^15.7.0",
     "vanilla-rangeslider": "^1.0.0"
   }
 }
