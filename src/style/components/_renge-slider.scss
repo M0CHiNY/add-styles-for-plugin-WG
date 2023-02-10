@@ -9,4 +9,14 @@
     .noUi-connect {
         background-color: #2AC2F2;
     }
+    .noUi-handle{
+        // background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        top:1;
+        cursor: pointer;
+        img{
+            width: 50px;
+        }
+    }
 }
