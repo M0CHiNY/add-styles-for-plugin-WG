@@ -3,15 +3,14 @@ import './index.html';
 import './style.scss';
 // Import noUiSlider
 import noUiSlider from 'nouislider';
-// Get image in folder img
-import range from './img/buttonRangeslider.svg'
 
 
 // init range slider
 var formslider = document.querySelector('.form-slider');
+var hidenInput = document.querySelector('.form-slider__child');
 
 noUiSlider.create(formslider , {
-   start: [70],
+   start: hidenInput.value,
    connect: 'lower',
     step: 10,
     range: {
@@ -20,21 +19,22 @@ noUiSlider.create(formslider , {
     },
 });
 
+
 // function update addEvenListener 
 formslider.noUiSlider.on('update', function (values, handle) {
-    let stepSliderValueElement = document.querySelector('.form-slider__text'),//get slider text 
-        hidenInput = document.querySelector('.form-slider__child'); // hiden input 
+    let stepSliderValueElement = document.querySelector('.form-slider__text');//get slider text 
+    // hidenInput = document.querySelector('.form-slider__child'); // hiden input 
     stepSliderValueElement.innerHTML = (values[handle] / 100); 
     hidenInput.values = stepSliderValueElement.innerHTML; // get value to hiden input
 });
 
+const ResetButton = document.querySelector('.settings__btn-reset');
 
-const createImg = document.createElement("img"), // create img tag <img>
-      buttonDef = document.querySelector('.noUi-handle'); // search touch 
-
-      function setImage(img, value){ // get tag img and 
-        img.src = value;
-        buttonDef.appendChild(img); // insert image to html
-      }
-
- setImage(createImg, range);  //call function setImage ();
+ResetButton.addEventListener('click', ()=> {
+    const saveButton = document.querySelector('.settings__btn-save');
+    saveButton.classList.add('button-active');// addClass
+    formslider.noUiSlider.set(0);// reset range slider
+    this.addEventListener('click', ()=>{
+        this.classList.remove ('button-active');// removeClass
+    })
+} )

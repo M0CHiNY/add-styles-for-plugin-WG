@@ -10,13 +10,28 @@
         background-color: #2AC2F2;
     }
     .noUi-handle{
-        // background-color: transparent;
+        background-color: transparent;
         border: 0;
         box-shadow: none;
         top:1;
         cursor: pointer;
+        &::before {
+            width: 50px;
+            height: 50px;
+            background-image: url("./../../img/buttonRangeslider.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+            top:-7px;
+            left: -8px;
+        }
         img{
             width: 50px;
         }
+    }
+    .form-slider__text{
+        font-size: 25px;
+        margin-top: 5px;
     }
 }
