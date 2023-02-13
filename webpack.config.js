@@ -27,8 +27,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
-      template: path.resolve(__dirname, 'src', 'chatDetail.html'),
     }),
+     new HtmlWebpackPlugin({
+       template: path.resolve(__dirname, 'src', 'chatDetail.html'),
+       filename: 'chatDetail.html',
+       inject: 'body'
+     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
