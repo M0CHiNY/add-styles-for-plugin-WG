@@ -1,4 +1,5 @@
 import './index.html';
+import './chatDetail.html';
 
 import './style.scss';
 // Import noUiSlider
