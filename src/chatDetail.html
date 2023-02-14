@@ -16,65 +16,77 @@
           <img class="settings__logo-img" src="img/logo.png" alt="logo GPT WriteGenie">
         </a>
       </div>
-      <div class="chat__wrap">
+      <div class="chat__wrap bg">
         <div class="chat__left-form-box">
-          <form class="chat__form" action="">
+          <form class="chat__form form-bg" action="">
             <label class="chat__label" for="">
               Request to Chat GPT
               <textarea class="chat__text" name="" id="" cols="30" rows="10"
                 placeholder="Example: write short article about the most popular pc games "></textarea>
               <div class="chat__btn-box">
-                <input class="chat__btn" type="submit" value="Generate">
-                <input class="chat__btn" type="reset" value="reset">
+                <button class="btn btn--save" type="submit">Generate</button>
+                <input class="btn btn--reset" type="reset" value="reset">
               </div>
             </label>
           </form>
-          <form class="chat__form" action="">
+          <form class="chat__form form-bg" action="">
             <label class="chat__label" for="">
               Post Title
-              <input type="text" class="chat__input">
+              <input type="text" class="chat__input input" placeholder="Example: the most popular pc games">
             </label>
             <label class="chat__label" for="">
               Post Content
               <textarea class="chat__text" name="" id="" cols="30" rows="10"></textarea>
             </label>
+            <h3 class="chat__category">Category</h3>
             <div class="chat__checkbox-inner">
-              Category
               <label for="ckb-1" class="chat__lab-check">
-                Variant 1
                 <input type="checkbox" class="chat__input" id="ckb-1">
+                Variant 1
               </label>
               <label for="ckb-2" class="chat__lab-check">
-                Variant 2
                 <input type="checkbox" class="chat__input" id="ckb-2">
+                Variant 2
               </label>
               <label for="ckb-3" class="chat__lab-check">
-                Variant 3
                 <input type="checkbox" class="chat__input" id="ckb-3">
+                Variant 3
               </label>
               <label for="ckb-4" class="chat__lab-check">
-                Variant 4
                 <input type="checkbox" class="chat__input" id="ckb-4">
+                Variant 4
               </label>
               <label for="ckb-5" class="chat__lab-check">
-                Variant 5
                 <input type="checkbox" class="chat__input" id="ckb-5">
+                Variant 5
               </label>
               <label for="ckb-6" class="chat__lab-check">
-                Variant 6
                 <input type="checkbox" class="chat__input" id="ckb-6">
+                Variant 6
               </label>
               <label for="ckb-7" class="chat__lab-check">
-                Variant 7
                 <input type="checkbox" class="chat__input" id="ckb-7">
+                Variant 7
               </label>
               <label for="ckb-8" class="chat__lab-check">
-                Variant 8
                 <input type="checkbox" class="chat__input" id="ckb-8">
+                Variant 8
               </label>
               <label for="ckb-9" class="chat__lab-check">
-                Variant 9
                 <input type="checkbox" class="chat__input" id="ckb-9">
+                Variant 9
+              </label>
+              <label for="ckb-10" class="chat__lab-check">
+                <input type="checkbox" class="chat__input" id="ckb-10">
+                Variant 10
+              </label>
+              <label for="ckb-11" class="chat__lab-check">
+                <input type="checkbox" class="chat__input" id="ckb-11">
+                Variant 11
+              </label>
+              <label for="ckb-12" class="chat__lab-check">
+                <input type="checkbox" class="chat__input" id="ckb-12">
+                Variant 12
               </label>
             </div>
             <label class="chat__label" for="">
@@ -82,23 +94,23 @@
               <textarea class="chat__text" name="" id="" cols="30" rows="10"></textarea>
             </label>
             <div class="chat__btn-box">
-              <input class="chat__btn" type="submit" value="Generate">
-              <input class="chat__btn" type="reset" value="reset">
+              <button class="btn btn--save" type="submit">Generate</button>
+              <input class="btn btn--reset" type="reset" value="reset">
             </div>
           </form>
         </div>
         <div class="chat__dialogs">
-          <img class="chat__brain" src="img/logo.png" alt="">
-          <h3 class="chat__title"></h3>
-          <form class="chat__form" action="">
-            <input class="chat__input" type="text" placeholder="Request">
-            <div class="chat__img-box">
+          <img class="chat__brain" src="img/brain.png" alt="">
+          <h3 class="chat__title">welcome to gpt chat</h3>
+          <form class="chat__form chat__form--request" action="">
+            <input class="chat__input chat__input--request input" type="text" placeholder="Request">
+            <button class="chat__img-box" type="submit">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M3.4 20.4L20.85 12.92C21.0304 12.8432 21.1842 12.715 21.2923 12.5514C21.4004 12.3879 21.4581 12.1961 21.4581 12C21.4581 11.804 21.4004 11.6122 21.2923 11.4486C21.1842 11.2851 21.0304 11.1569 20.85 11.08L3.4 3.60003C3.2489 3.53412 3.08377 3.50687 2.91951 3.52073C2.75525 3.53459 2.59702 3.58912 2.4591 3.67942C2.32118 3.76971 2.20791 3.89292 2.1295 4.03793C2.0511 4.18293 2.01003 4.34518 2.01 4.51003L2 9.12003C2 9.62003 2.37 10.05 2.87 10.11L17 12L2.87 13.88C2.37 13.95 2 14.38 2 14.88L2.01 19.49C2.01 20.2 2.74 20.69 3.4 20.4Z"
                   fill="white" />
               </svg>
-            </div>
+            </button>
           </form>
         </div>
       </div>
