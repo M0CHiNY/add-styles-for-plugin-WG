@@ -10,15 +10,20 @@
   font-weight: 600;
 }
 
+@mixin _1220 {
+  @media (max-width: 1220px) {
+    @content;
+  }
+}
+
 @mixin _1100 {
   @media (max-width: 1100px) {
     @content;
   }
 }
+
 @mixin _660 {
   @media (max-width: 660px) {
     @content;
   }
 }
-
-

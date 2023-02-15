@@ -1,109 +1,173 @@
-.chat {}
+.chat {
 
+  
 
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 94px 0 20px;
 
-
-.chat__wrap {
-  display: flex;
-  justify-content: space-between;
-  padding: 94px 0 20px;
-}
-
-.chat__left-form-box {
-  max-width: 1040px;
-  width: 100%;
-}
-
-.chat__form {
-  position: relative;
-  padding: 20px 80px 20px 50px;
-
-  &--request{
-    padding: 20px;
+    @include _1220 {
+      display: block;
+      padding: 50px 15px 20px;
+    }
   }
-}
 
-.chat__label {
-  font-size: 32px;
-}
+  &__left-form-box {
+    max-width: 1040px;
+    width: 100%;
 
-.chat__text {
-  display: block;
-  margin: 10px 0 20px;
-  background-color: #171717;
-  border-radius: 4px;
-  border: none;
-  resize: none;
-  height: 250px;
-  max-width: 910px;
-  width: 100%;
-  font-size: 24px;
-  padding: 20px 20px 20px 21px;
-  color: rgba(255, 255, 255, 0.5);
-  @include OpenSans-400;
-}
-
-.chat__btn-box {}
-
-.chat__btn {}
-
-.chat__input {
-  margin: 18px 0 20px;
-
-  &--request {
-    background-color: rgba(255, 255, 255, 0.25);
-    width: 680px;
+    @include _1220 {
+      margin: 0 auto;
+    }
   }
-}
 
-.chat__category {
-  font-size: 32px;
-}
+  &__form {
+    position: relative;
+    padding: 20px 80px 20px 50px;
 
-.chat__checkbox-inner {
-  margin: 20px 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 50px;
-}
+    @include _1220 {
+      border-radius: 16px;
+    }
 
-.chat__lab-check {
-  @include OpenSans-400;
-  font-size: 24px;
-  color: rgba(255, 255, 255, 0.5);
-  display: block;
-  height: 33px;
-}
+    &--request {
+      padding: 20px;
+    }
+  }
 
-.chat__dialogs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 720px;
-  height: 498px;
-  background-color: #171717;
-  margin-right: 50px;
-  text-align: center;
-}
+  &__label {
+    position: relative;
+    font-size: 32px;
+  }
 
-.chat__brain {
-  width: 50px;
-  height: 42px;
-  margin: 0 auto;
-  margin-top: 10px;
-}
+  &__text {
+    display: block;
+    margin: 10px 0 20px;
+    background-color: #171717;
+    border-radius: 4px;
+    border: none;
+    resize: none;
+    height: 250px;
+    max-width: 910px;
+    width: 100%;
+    font-size: 24px;
+    padding: 20px 20px 20px 21px;
+    color: rgba(255, 255, 255, 0.5);
+    @include OpenSans-400;
+  }
 
-.chat__title {
-  text-transform: uppercase;
-  @include OpenSans-400;
-  color: #2AC2F2;
-}
+  &__input {
+    margin: 18px 0 20px;
 
-.chat__img-box {
-  position: absolute;
-  right: 33px;
-  top: 42px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
+    &--request {
+      background-color: rgba(255, 255, 255, 0.25);
+      max-width: 680px;
+      margin-top: 0;
+      padding-right: 50px;
+    }
+  }
+
+  &__category {
+    font-size: 32px;
+  }
+
+  &__checkbox-inner {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 50px;
+  }
+
+  &__lab-check {
+    @include OpenSans-400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    height: 33px;
+  }
+
+  &__dialogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 720px;
+    width: 100%;
+    height: 498px;
+    background-color: #171717;
+    margin-right: 50px;
+    text-align: center;
+    border-radius: 16px;
+
+    @include _1220 {
+      margin: 0 auto;
+    }
+  }
+
+  &__brain {
+    width: 50px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    @include OpenSans-400;
+    color: #2AC2F2;
+  }
+
+  &__img-box {
+    position: absolute;
+    right: 33px;
+    top: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__dialog {
+    display: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  &__logo-box {
+    max-width: 50px;
+    width: 100% !important;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--author {
+      background-color: #2AC2F2;
+    }
+
+    &--ai {
+      background-color: #11A281;
+    }
+  }
+
+  &__info {
+    margin-left: 10px;
+    text-align: left;
+    align-self: center;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  &__coppy {
+    position: absolute;
+    right: 20px;
+    bottom: 86px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &--post-content {
+      bottom: 15px;
+    }
+  }
 }
