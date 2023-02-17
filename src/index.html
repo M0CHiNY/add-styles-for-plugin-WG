@@ -20,9 +20,9 @@
       <div class="settings__wrap bg">
         <h2 class="settings__title">settings</h2>
         <div class="settings__inner">
-          <form class="settings__form form-bg" action="">
+          <form class="settings__form form-bg" action="" id="form-settings">
             <label class="settings__label" for="">Chat GPT
-              <input type="text" class="settings__input setting__api input" placeholder="API Token (sk-xxxxx)">
+              <input type="text" class="settings__input setting__api input" placeholder="API Token (sk-xxxxx)" value="12342123">
             </label>
             <label class="settings__label settings__label--hidden" for="">
               <div class="settings__label_wrapper">
@@ -45,7 +45,7 @@
             <div class="range__wrapper">
               <div class="form-slider"></div>
               <div class="form-slider__text" id="slider-step-value"></div>
-              <input class="form-slider__child" type="text" value="70" hidden>
+              <input class="form-slider__child" type="text" value="10" hidden>
             </div>
             <label class="settings__label">
               <div class="settings__label_wrapper">
@@ -72,7 +72,6 @@
               <option class="settings__input" value="">Ukraine UA</option>
             </select>
             <button class="btn btn--save" type="submit">Save Settings</button>
-            <input class="btn btn--reset" type="reset" value="Reset"></input>
           </form>
           <div class="settings__box-img">
             <img class="settings__img" src="img/brain.png" alt="big logo brain">
