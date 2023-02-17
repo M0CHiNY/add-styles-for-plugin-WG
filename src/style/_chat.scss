@@ -105,6 +105,8 @@
     color: rgba(255, 255, 255, 0.5);
     display: block;
     height: 33px;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &__real-checkbox {
@@ -157,35 +159,36 @@
   &__key-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 7px;
-    margin: 12px 0;
 
     li {
-      color: red;
-      margin: 4px 3px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      margin: 20px 10px 10px;
       list-style: none;
       border-radius: 4px;
       background: rgba(42, 194, 242, 0.25);
       padding: 5px 8px 5px 10px;
-      border: 1px solid #e3e1e1;
       height: 33px;
+      font-size: 24px;
     }
 
     i {
-      height: 20px;
-      width: 20px;
-      color: #ffffff;
-      margin-left: 8px;
-      font-size: 12px;
+      // height: 20px;
+      // width: 20px;
+      // color: #ffffff;
+      // margin-left: 8px;
+      // font-size: 12px;
       cursor: pointer;
-      border-radius: 50%;
-      background: #dfdfdf;
-      justify-content: center;
+      // border-radius: 50%;
+      // background: #dfdfdf;
+      // justify-content: center;
     }
   }
 
   &__key {
-    height: 126px;
+    position: relative;
+    height: 50px;
     margin: 10px 0 20px;
     flex: 1;
     padding: 15px;
